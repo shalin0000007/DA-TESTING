@@ -1,0 +1,11 @@
+{
+  "name": "da-testing-project",
+  "version": "1.0.0",
+  "description": "A playground project for DevAgent testing.",
+  "main": "main.js",
+  "scripts": {
+    "start": "echo 'Run locally by opening index.html'"
+  },
+  "author": "shalin0000007",
+  "license": "MIT"
+}
