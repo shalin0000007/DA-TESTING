@@ -1,23 +1,57 @@
+/* Modern UI Background Gradient */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    /* Bug: Plain white background - Should be a modern gradient */
-    background-color: white; 
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  
+  /* Modern dark gradient background */
+  background: linear-gradient(
+    135deg,
+    #0f0c29 0%,
+    #1a154b 50%,
+    #302b63 100%
+  );
+  
+  /* Ensure full height coverage */
+  min-height: 100vh;
+  
+  /* Smooth color transition */
+  background-attachment: fixed;
+  
+  /* Enhanced visual appeal */
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
 }
 
-#app {
-    text-align: center;
-    padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+/* Subtle animation for dynamic gradient effect */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+/* Premium UI enhancements */
+.container {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Text readability on dark background */
+body {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+/* Responsive design for all screen sizes */
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(
+      135deg,
+      #0f0c29 0%,
+      #302b63 100%
+    );
+  }
 }
