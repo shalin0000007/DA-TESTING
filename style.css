@@ -1,23 +1,97 @@
+/* Modern dark gradient background with premium styling */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    /* Bug: Plain white background - Should be a modern gradient */
-    background-color: white; 
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-#app {
-    text-align: center;
-    padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+/* Glassmorphism effect overlay */
+.glass-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  z-index: -1;
 }
 
-button {
+/* Content container with modern glassmorphism */
+.content-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover effects for interactive elements */
+.modern-button {
+  background: linear-gradient(135deg, #6e8efb 0%, #a772ff 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 12px 24px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modern-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+}
+
+/* Typography and spacing improvements */
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0.8rem 0;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+/* Responsive design for all devices */
+@media (max-width: 768px) {
+  .content-card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .modern-button {
     padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 0.9rem;
+  }
+}
+
+/* Smooth transitions for all states */
+* {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
