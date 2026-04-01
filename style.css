@@ -1,23 +1,33 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    /* Bug: Plain white background - Should be a modern gradient */
-    background-color: white; 
+  margin: 0;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #1a1550);
+  font-family: 'Inter', sans-serif;
+  background-attachment: fixed;
 }
 
-#app {
-    text-align: center;
-    padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(131deg, #0f0c29, #302b63);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0.5em;
+  border-radius: 20px;
+  font-size: 1.5em;
+  color: #000000;
+  text-align: center;
+  background-color: #25233F;
+  height: 100%;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63);
+  font-family: 'Inter', sans-serif;
+  background-attachment: fixed;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
